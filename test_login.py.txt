@@ -1,0 +1,13 @@
+
+class TestLogin(BaseTest):
+
+
+  
+   def test_login_valid_data(self):
+       logger = generate_log()
+
+       logger.info("welcome")
+
+       login_page = LoginPage(self.driver,logger)
+
+       login_page.login()
